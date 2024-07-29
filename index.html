@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destretch Correlation Algorithm App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        textarea {
+            width: 300px;
+            height: 150px;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Destretch Correlation Algorithm</h1>
+    <textarea id="inputData" placeholder="Enter your data here..."></textarea>
+    <button onclick="runAlgorithm()">Run Algorithm</button>
+
+    <div id="result"></div>
+
+    <script>
+        function runAlgorithm() {
+            const inputData = document.getElementById('inputData').value;
+            const resultDiv = document.getElementById('result');
+
+            // Here we would implement the destretch correlation algorithm.
+            // For now, we will just simulate an output.
+            const processedData = `Processed data based on the destretch correlation algorithm: ${inputData}`;
+            
+            resultDiv.innerText = processedData;
+        }
+    </script>
+
+</body>
+</html>
